@@ -9,6 +9,7 @@ const TodoForm = ({ markTodoAsFinished }) => {
     markTodoAsFinished({
       id: uuidv4(),
       text: inputValue,
+      isComplete: false,
     });
     setInputValue('');
   };
