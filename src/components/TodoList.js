@@ -6,9 +6,6 @@ const TodoList = () => {
   const [todos, setTodos] = useState([]);
 
   const markTodoAsFinished = todo => {
-    // if (!todo.text || /^\s*$/.test(todo.text)) {
-    //   return;
-    // }
     const newTodos = [todo, ...todos];
 
     setTodos(newTodos);
@@ -21,7 +18,6 @@ const TodoList = () => {
   };
 
   const completeTodo = id => {
-    console.log(id);
     const updatedTodos = todos.map(todo => {
       if (todo.id === id) {
         todo.isComplete = !todo.isComplete;
