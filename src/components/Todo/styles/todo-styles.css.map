@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,KAAK,CAAC;EACJ,UAAU,EAAE,GAAG;EACf,MAAM,EAAE,IAAI;CACb;;AAED,AAAA,eAAe,CAAC;EACd,UAAU,EAAE,IAAI;EAChB,MAAM,EAAE,IAAI;CACb",
+    "sources": [
+        "todo-styles.scss"
+    ],
+    "names": [],
+    "file": "todo-styles.css"
+}

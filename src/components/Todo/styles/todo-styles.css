@@ -1,0 +1,10 @@
+.todo {
+  background: red;
+  margin: 1rem;
+}
+
+.todo__finished {
+  background: blue;
+  margin: 1rem;
+}
+/*# sourceMappingURL=todo-styles.css.map */
