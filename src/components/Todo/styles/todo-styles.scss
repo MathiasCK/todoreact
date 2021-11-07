@@ -26,6 +26,7 @@ $desktop: 1024px;
   .todo__content {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
   .todo__content--paragraph {
     font-family: $paragraph;
