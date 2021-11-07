@@ -1,4 +1,5 @@
 .todo, .todo__finished {
+  background: #f7f7f7;
   width: 100%;
   margin: 0 auto;
   -webkit-box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
@@ -42,22 +43,22 @@
 }
 
 .todo .todo__content__button--mark, .todo__finished .todo__content__button--mark {
-  border: 1px solid #86dc3d;
-  color: #86dc3d;
+  border: 1px solid #a0e7a0;
+  color: #a0e7a0;
 }
 
 .todo .todo__content__button--mark:hover, .todo__finished .todo__content__button--mark:hover {
-  background: #86dc3d;
+  background: #a0e7a0;
   color: white;
 }
 
 .todo .todo__content__button--delete, .todo__finished .todo__content__button--delete {
-  border: 1px solid #ff2400;
-  color: #ff2400;
+  border: 1px solid #ff5148;
+  color: #ff5148;
 }
 
 .todo .todo__content__button--delete:hover, .todo__finished .todo__content__button--delete:hover {
-  background: #ff2400;
+  background: #ff5148;
   color: white;
 }
 
@@ -69,7 +70,7 @@
 }
 
 .todo__finished {
-  background: rgba(145, 145, 145, 0.7);
+  background: #d1d1d1;
   color: rgba(0, 0, 0, 0.6);
 }
 

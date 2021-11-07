@@ -3,6 +3,7 @@
 $transition: 0.3s all ease-in-out;
 $header: 'Lobster', cursive;
 $paragraph: 'Chivo', sans-serif;
+$blue: #7da2a9;
 
 $mobile: 400px;
 $tablet: 768px;
@@ -14,16 +15,21 @@ $desktop: 1024px;
   box-sizing: border-box;
 }
 
+body {
+  background: #f7f7f7;
+}
+
 button {
   cursor: pointer;
   border: none;
   padding: 0.25rem;
   margin: 0.25rem;
-  border: 1px solid rgba(0, 0, 0, 0.9);
+  border: 1px solid $blue;
+  color: $blue;
   background: transparent;
   transition: $transition;
   &:hover {
-    background: rgba(0, 0, 0, 0.9);
+    background: $blue;
     color: white;
   }
 }

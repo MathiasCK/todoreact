@@ -36,6 +36,7 @@
 }
 
 .todolist .todolist__header {
+  color: #7da2a9;
   font-family: "Lobster", cursive;
   text-align: center;
   margin: 1rem 0;

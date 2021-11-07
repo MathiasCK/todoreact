@@ -6,19 +6,24 @@
           box-sizing: border-box;
 }
 
+body {
+  background: #f7f7f7;
+}
+
 button {
   cursor: pointer;
   border: none;
   padding: 0.25rem;
   margin: 0.25rem;
-  border: 1px solid rgba(0, 0, 0, 0.9);
+  border: 1px solid #7da2a9;
+  color: #7da2a9;
   background: transparent;
   -webkit-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
 }
 
 button:hover {
-  background: rgba(0, 0, 0, 0.9);
+  background: #7da2a9;
   color: white;
 }
 

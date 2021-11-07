@@ -36,8 +36,7 @@ const Group = styled.div`
 `;
 
 const StyledFormInput = styled.input`
-  background: none;
-  background-color: white;
+  background: #f7f7f7;
   color: grey;
   font-size: 18px;
   padding: 10px 10px 10px 5px;

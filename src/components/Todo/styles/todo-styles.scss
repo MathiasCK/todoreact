@@ -1,13 +1,14 @@
 $transition: 0.3s all ease-in-out;
 $paragraph: 'Chivo', sans-serif;
-$green: #86dc3d;
-$red: #ff2400;
+$green: #a0e7a0;
+$red: #ff5148;
 
 $mobile: 400px;
 $tablet: 768px;
 $desktop: 1024px;
 
 .todo {
+  background: #f7f7f7;
   width: 100%;
   margin: 0 auto;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
@@ -58,7 +59,7 @@ $desktop: 1024px;
 
 .todo__finished {
   @extend .todo;
-  background: rgba(145, 145, 145, 0.7);
+  background: #d1d1d1;
   color: rgba(0, 0, 0, 0.6);
   p {
     text-decoration: line-through;
