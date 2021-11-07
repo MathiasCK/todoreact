@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
+import FormInput from '../Form-Input';
+import './styles/todoadder-styles.css';
 
-const TodoForm = ({ todos, setTodos }) => {
+const TodoAdder = ({ todos, setTodos }) => {
   const [inputValue, setInputValue] = useState('');
 
   const handleSubmit = e => {
@@ -23,18 +25,22 @@ const TodoForm = ({ todos, setTodos }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <input
-        required
-        placeholder='Add a todo'
+    <form className='todo-adder' onSubmit={handleSubmit}>
+      <FormInput
+        type='text'
+        name='add'
         value={inputValue}
         onChange={e => {
           setInputValue(e.target.value);
         }}
+        label='Add a todo'
+        required
       />
-      <button onClick={handleSubmit}>Add todo</button>
+      <button className='todo-adder__button' onClick={handleSubmit}>
+        Submit
+      </button>
     </form>
   );
 };
 
-export default TodoForm;
+export default TodoAdder;

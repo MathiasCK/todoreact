@@ -1,10 +1,11 @@
 import React from 'react';
 import './styles/todo-styles.css';
+import TodoButtons from './TodoButtons';
 
 const Todo = ({ todos, setTodos }) => {
   const removeTodo = id => {
-    const removedArr = [...todos].filter(todo => todo.id !== id);
-    setTodos(removedArr);
+    const updatedTodos = [...todos].filter(todo => todo.id !== id);
+    setTodos(updatedTodos);
   };
 
   const markTodoAsComplete = id => {
@@ -16,26 +17,35 @@ const Todo = ({ todos, setTodos }) => {
         return todo;
       })
       .sort((x, y) => {
+        if (x.isComplete && !y.isComplete) {
+          const dateX = new Date(x.date);
+          const dateY = new Date(y.date);
+          return dateX - dateY;
+        }
         return x.isComplete - y.isComplete;
       });
     setTodos(updatedTodos);
   };
+
+  if (!todos.length) {
+    return (
+      <h4 className='todo__empty'>No todos yet, start adding some above</h4>
+    );
+  }
+
   return todos.map(todo => (
     <article
       key={todo.id}
       className={todo.isComplete ? 'todo__finished' : 'todo'}
     >
-      <div
-        onClick={() => {
-          markTodoAsComplete(todo.id);
-        }}
-      >
-        {todo.text}
-      </div>
-
-      {todo.isComplete && (
-        <button onClick={() => removeTodo(todo.id)}>Delete</button>
-      )}
+      <section className='todo__content'>
+        <p className='todo__content--paragraph'>{todo.text}</p>
+        <TodoButtons
+          todo={todo}
+          markTodoAsComplete={markTodoAsComplete}
+          removeTodo={removeTodo}
+        />
+      </section>
     </article>
   ));
 };

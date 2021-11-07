@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The <TodoAdder /> component handles snapshot 1`] = `
+<form
+  className="todo-form"
+  onSubmit={[Function]}
+>
+  <input
+    className="todo-form__input"
+    onChange={[Function]}
+    placeholder="Add a todo"
+    required={true}
+    value=""
+  />
+  <button
+    className="todo-form__button"
+    onClick={[Function]}
+  >
+    Add todo
+  </button>
+</form>
+`;

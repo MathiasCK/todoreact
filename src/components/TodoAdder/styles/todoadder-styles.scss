@@ -1,0 +1,14 @@
+$mobile: 400px;
+
+.todo-adder {
+  display: block;
+
+  @media screen and(min-width: $mobile) {
+    display: flex;
+    align-items: center;
+  }
+
+  .todo-adder__button {
+    height: 4vh;
+  }
+}
