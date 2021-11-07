@@ -1,5 +1,6 @@
 .todo-adder {
   display: block;
+  margin: 1rem 0;
 }
 
 @media screen and (min-width: 400px) {

@@ -2,7 +2,7 @@ $mobile: 400px;
 
 .todo-adder {
   display: block;
-
+  margin: 1rem 0;
   @media screen and(min-width: $mobile) {
     display: flex;
     align-items: center;

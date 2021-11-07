@@ -18,7 +18,6 @@ const FormInput = ({ handleChange, label, ...otherProps }) => (
 
 const Group = styled.div`
   position: relative;
-  margin: 45px 0;
   .form-input-label {
     color: grey;
     font-size: 16px;
