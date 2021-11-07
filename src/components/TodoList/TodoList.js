@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import TodoAdder from '../TodoAdder/TodoAdder';
 import Todo from '../Todo/Todo';
+import TodoAdder from '../TodoAdder/TodoAdder';
 import './styles/todolist-styles.css';
 
 const TodoList = () => {

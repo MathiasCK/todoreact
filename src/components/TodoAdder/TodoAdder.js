@@ -1,10 +1,17 @@
+import PropTypes from 'prop-types';
 import React, { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
-import FormInput from '../Form-Input';
+
+import FormInput from './Form-Input';
 import './styles/todoadder-styles.css';
 
 const TodoAdder = ({ todos, setTodos }) => {
   const [inputValue, setInputValue] = useState('');
+
+  const addNewTodo = todo => {
+    const newTodos = [todo, ...todos];
+    setTodos(newTodos);
+  };
 
   const handleSubmit = e => {
     e.preventDefault();
@@ -17,11 +24,6 @@ const TodoAdder = ({ todos, setTodos }) => {
       isComplete: false,
     });
     setInputValue('');
-  };
-
-  const addNewTodo = todo => {
-    const newTodos = [todo, ...todos];
-    setTodos(newTodos);
   };
 
   return (
@@ -41,6 +43,11 @@ const TodoAdder = ({ todos, setTodos }) => {
       </button>
     </form>
   );
+};
+
+TodoAdder.propTypes = {
+  todos: PropTypes.array.isRequired,
+  setTodos: PropTypes.func.isRequired,
 };
 
 export default TodoAdder;

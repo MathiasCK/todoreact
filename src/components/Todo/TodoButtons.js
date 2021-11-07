@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const TodoButtons = ({ todo, markTodoAsComplete, removeTodo }) => (
   <>
@@ -31,5 +32,11 @@ const TodoButtons = ({ todo, markTodoAsComplete, removeTodo }) => (
     )}
   </>
 );
+
+TodoButtons.propTypes = {
+  todo: PropTypes.object.isRequired,
+  markTodoAsComplete: PropTypes.func.isRequired,
+  removeTodo: PropTypes.func.isRequired,
+};
 
 export default TodoButtons;

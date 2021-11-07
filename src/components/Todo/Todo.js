@@ -1,5 +1,6 @@
 import React from 'react';
 import './styles/todo-styles.css';
+import PropTypes from 'prop-types';
 import TodoButtons from './TodoButtons';
 
 const Todo = ({ todos, setTodos }) => {
@@ -12,7 +13,9 @@ const Todo = ({ todos, setTodos }) => {
     const updatedTodos = todos
       .map(todo => {
         if (todo.id === id) {
+          /* eslint-disable */
           todo.isComplete = !todo.isComplete;
+          /* eslint-enable */
         }
         return todo;
       })
@@ -48,6 +51,11 @@ const Todo = ({ todos, setTodos }) => {
       </section>
     </article>
   ));
+};
+
+Todo.propTypes = {
+  todos: PropTypes.array.isRequired,
+  setTodos: PropTypes.func.isRequired,
 };
 
 export default Todo;
