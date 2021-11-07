@@ -20,7 +20,7 @@ const Todo = ({ todos, setTodos }) => {
         return todo;
       })
       .sort((x, y) => {
-        if (x.isComplete && !y.isComplete) {
+        if (!x.isComplete && y.isComplete) {
           const dateX = new Date(x.date);
           const dateY = new Date(y.date);
           return dateX - dateY;
