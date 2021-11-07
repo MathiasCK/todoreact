@@ -40,6 +40,7 @@
 
 .todo .todo__content--paragraph, .todo__finished .todo__content--paragraph {
   font-family: "Chivo", sans-serif;
+  font-weight: 100;
 }
 
 .todo .todo__content__button--mark, .todo__finished .todo__content__button--mark {

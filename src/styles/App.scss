@@ -20,6 +20,8 @@ body {
 }
 
 button {
+  font-family: $paragraph;
+  font-weight: 100;
   cursor: pointer;
   border: none;
   padding: 0.25rem;
@@ -32,6 +34,12 @@ button {
     background: $blue;
     color: white;
   }
+}
+
+input,
+label {
+  font-family: $paragraph;
+  font-weight: 100;
 }
 
 a {

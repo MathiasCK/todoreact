@@ -11,6 +11,8 @@ body {
 }
 
 button {
+  font-family: "Chivo", sans-serif;
+  font-weight: 100;
   cursor: pointer;
   border: none;
   padding: 0.25rem;
@@ -25,6 +27,12 @@ button {
 button:hover {
   background: #7da2a9;
   color: white;
+}
+
+input,
+label {
+  font-family: "Chivo", sans-serif;
+  font-weight: 100;
 }
 
 a {
