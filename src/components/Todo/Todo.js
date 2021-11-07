@@ -24,9 +24,7 @@ const Todo = ({ todos, setTodos }) => {
   };
 
   if (!todos.length) {
-    return (
-      <h4 className='todo__empty'>No todos yet, start adding some above</h4>
-    );
+    return <h4 className='todo__empty'>No todos, start adding some above</h4>;
   }
 
   return todos.map(todo => (
