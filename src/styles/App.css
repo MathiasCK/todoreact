@@ -14,7 +14,7 @@ button {
   cursor: pointer;
   border: none;
   padding: 0.25rem;
-  margin: 0.25rem;
+  margin: 0 0.5rem;
   border: 1px solid #7da2a9;
   color: #7da2a9;
   background: transparent;

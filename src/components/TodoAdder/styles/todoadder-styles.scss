@@ -5,7 +5,7 @@ $mobile: 400px;
   margin: 1rem 0;
   @media screen and(min-width: $mobile) {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
   }
 
   .todo-adder__button {
